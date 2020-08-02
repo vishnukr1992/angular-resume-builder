@@ -16,6 +16,8 @@
 
 h1.example-app-name {
   margin-left: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 .example-sidenav-container {
@@ -32,3 +34,4 @@ h1.example-app-name {
 .selected-menu {
   color: red($color: #000000);
 }
+
