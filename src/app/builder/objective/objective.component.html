@@ -1,0 +1,76 @@
+<div class="objective-container">
+
+    <mat-tab-group>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons">edit</mat-icon>
+                EDIT
+            </ng-template>
+            <mat-card class="objective-card">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <span class="material-icons">
+                            account_circle
+                        </span>
+                    </div>
+                    <mat-card-title>
+                        <mat-form-field class="full-width">
+                            <mat-label>Title</mat-label>
+                            <input [(ngModel)]="objective.title" matInput placeholder="Enter objective's title">
+                        </mat-form-field>
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        <mat-form-field class="full-width">
+                            <mat-label>Subtitle</mat-label>
+                            <input [(ngModel)]="objective.subTitle" matInput placeholder="Enter subtitle">
+                        </mat-form-field>
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        <mat-form-field class="full-width">
+                            <mat-label>Address</mat-label>
+                            <textarea [(ngModel)]="objective.content" matInput placeholder="Enter your objective content"></textarea>
+                        </mat-form-field>
+                    </p>
+                </mat-card-content>
+                <mat-card-actions class="right-allign">
+                    <button (click)="saveObjective()" mat-raised-button color="primary">SAVE</button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-tab>
+
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons"> preview </mat-icon>
+                VIEW
+            </ng-template>
+            <mat-card class="objective-card">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <span class="material-icons">
+                            account_circle
+                        </span>
+                    </div>
+                    <mat-card-title>Objective</mat-card-title>
+                    <mat-card-subtitle>Passionate Engineer</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </mat-tab>
+    </mat-tab-group>
+</div>
