@@ -28,22 +28,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-## RUNNING IN IDE AND TEST IN CONSOLE**
-`note: To setting up the code base for console testing we have to change few files in the code first`
 
-+ Step 1
-    - Change the following file with the properties
-       ```java
-         public static final Boolean IS_SECURE_CONNECTION=false;
-         public static final boolean IS_RASPBERRY_DEVICE=false;
-         public static final Boolean IS_PROXY_ENABLE=false;
-         public static Boolean IS_WATCHDOG_AVAILABLE=false;
-+ Step 2
-    - Go to `MTicketApplication.java` and modify the `openScanner()` method as showing below. This will helps to read texts from console.
-        ```java
-        private static void openScanner() {
-               readScanner();
-               /*if (Objects.isNull(serialPort) || !serialPort.isOpened())
-              readQR();
-             sendSignalToScanner();*/
-        }
